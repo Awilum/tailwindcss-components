@@ -1,0 +1,7 @@
+{
+  "name": "tailwindcss-components",
+  "version": "1.0.0",
+  "devDependencies": {
+    "tailwindcss": "^1.0",
+  }
+}
