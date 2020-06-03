@@ -5,70 +5,57 @@
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container p-20">
-            <h1 class="text-6xl pb-4 text-center">TAILWIND CSS<br>COMPONENTS</h1>
-            <div class="text-center mb-20">
-                <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-normal py-2 px-4 rounded">View Source</a>
-            </div>
-            <h3 class="text-3xl pb-4">Buttons</h3>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-normal py-2 px-4 rounded">
-                Primary
-            </button>
-            <button class="bg-gray-500 hover:bg-gray-700 text-white font-normal py-2 px-4 rounded">
-                Secondary
-            </button>
-            <button class="bg-green-500 hover:bg-green-700 text-white font-normal py-2 px-4 rounded">
-                Success
-            </button>
-            <button class="bg-red-500 hover:bg-red-700 text-white font-normal py-2 px-4 mb-2 rounded">
-                Danger
-            </button>
-            <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-normal py-2 px-4 mb-2 rounded">
-                Warning
-            </button>
-            <button class="bg-teal-500 hover:bg-teal-700 text-white font-normal py-2 px-4 mb-2 rounded">
-                Info
-            </button>
-            <button class="bg-gray-700 hover:bg-gray-900 text-white font-normal py-2 px-4 mb-2 rounded">
-                Dark
-            </button>
-            <button class="bg-transparent text-blue-500 hover:underline hover:text-blue-700 font-normal py-2 px-4 mb-2 rounded">
-                Link
-            </button>
-
-            <h3 class="text-3xl pb-4 pt-10">Breadcrumb</h3>
-            <div class="bg-gray-300 text-gray-700 rounded pr-4 pl-4 pt-2 pb-2 mb-2">Home</div>
-            <div class="bg-gray-300 text-gray-700 rounded pr-4 pl-4 pt-2 pb-2 mb-2"><a href="#" class="text-blue-500 hover:text-blue-700 hover:underline">Home</a> / Library</div>
-            <div class="bg-gray-300 text-gray-700 rounded pr-4 pl-4 pt-2 pb-2 mb-2"><a href="#" class="text-blue-500 hover:text-blue-700 hover:underline">Home</a> / <a href="#" class="text-blue-500 hover:text-blue-700 hover:underline">Library</a> / Data</div>
-
-            <h3 class="text-3xl pb-4 pt-10">Alerts</h3>
-            <div class="bg-blue-300 text-blue-800 border-blue-400 border font-normal py-2 px-4 mb-2 rounded">A simple primary alert!</div>
-            <div class="bg-gray-300 text-gray-800 border-gray-400 border font-normal py-2 px-4 mb-2 rounded">A simple secondary alert!</div>
-            <div class="bg-green-300 text-green-800 border-green-400 border font-normal py-2 px-4 mb-2 rounded">A simple success alert!</div>
-            <div class="bg-red-300 text-red-800 border-red-400 border font-normal py-2 px-4 mb-2 rounded">A simple danger alert!</div>
-            <div class="bg-yellow-300 text-yellow-800 border-yellow-400 border font-normal py-2 px-4 mb-2 rounded">A simple warning alert!</div>
-            <div class="bg-teal-300 text-teal-800 border-teal-400 border font-normal py-2 px-4 mb-2 rounded">A simple info alert!</div>
-            <div class="bg-gray-700 text-gray-100 border-gray-800 border font-normal py-2 px-4 mb-2 rounded">A simple dark alert!</div>
-            <div class="bg-gray-100 text-gray-500 border-gray-200 border font-normal py-2 px-4 mb-2 rounded">A simple light alert!</div>
-
-            <h3 class="text-3xl pb-4 pt-10">Badges</h3>
-            <span class="bg-blue-500 text-xs text-white font-normal py-1 px-2 rounded">Primary</span>
-            <span class="bg-gray-500 text-xs text-white font-normal py-1 px-2 rounded">Secondary</span>
-            <span class="bg-red-500 text-xs text-white font-normal py-1 px-2 rounded">Danger</span>
-            <span class="bg-yellow-500 text-xs text-white font-normal py-1 px-2 rounded">Warning</span>
-            <span class="bg-teal-500 text-xs text-white font-normal py-1 px-2 rounded">Info</span>
-            <span class="bg-gray-700 text-gray-100 text-xs font-normal py-1 px-2 rounded">Dark</span>
-            <span class="bg-gray-100 text-gray-500 text-xs font-normal py-1 px-2 rounded">Light</span>
-
-            <h3 class="text-3xl pb-4 pt-10">Cards</h3>
-            <div class="border border-gray-300 rounded w-full lg:w-3/12">
-                <img src="https://via.placeholder.com/150" class="w-full" alt="">
-                <div class="p-4">
-                    <h5 class="pb-3 text-lg">Card title</h5>
-                    <p class="mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="bg-blue-500 hover:bg-blue-700 text-white font-normal py-2 px-4 rounded">View</a>
+        <div class="w-full flex">
+            <div id="shadow" onclick="hideMenu();" class="hidden z-30 fixed block opacity-75 h-full w-full" style="background: black;"></div>
+            <div id="menu" class="hidden lg:block w-3/12 pl-12 pt-6 pb-10 text-white bg-black sidebar">
+                <div class="flextype-docs-logo">
+                    <h1 class="text-3xl pb-4 text-left font-black">TAILWIND CSS<br>COMPONENTS</h1>
                 </div>
+                <ul class="m-0 p-0 list-none">
+                   <li>
+                       <a href="#" class="no-underline">HEADER</a>
+                   </li>
+                   <li>
+                       <a href="#" class="no-underline">HERO</a>
+                   </li>
+                   <li>
+                       <a href="#" class="no-underline">FOOTER</a>
+                   </li>
+               </ul>
+            </div>
+            <div class="w-full lg:w-9/12 pl-6 pt-6">
+                <a href="javascript:;" onclick="showMenu();" class="absolute lg:hidden right-0 top-0 mr-10 mt-12">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <h3 class="text-2xl pb-4 text-left font-black">HEADER</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptas impedit nesciunt nostrum ut. Porro voluptate, necessitatibus fugit officiis eum quibusdam ab ducimus autem fuga, earum distinctio repudiandae incidunt nam.</p>
+                <h3 class="text-2xl pb-4 text-left font-black">HERO</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptas impedit nesciunt nostrum ut. Porro voluptate, necessitatibus fugit officiis eum quibusdam ab ducimus autem fuga, earum distinctio repudiandae incidunt nam.</p>
+                <h3 class="text-2xl pb-4 text-left font-black">FOOTER</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptas impedit nesciunt nostrum ut. Porro voluptate, necessitatibus fugit officiis eum quibusdam ab ducimus autem fuga, earum distinctio repudiandae incidunt nam.</p>
             </div>
         </div>
+
+        <script>
+            function showMenu() {
+                document.getElementById("menu").className = document.getElementById("menu").className.replace(/(?:^|\s)hidden(?!\S)/g, '');
+                document.getElementById("menu").className = document.getElementById("menu").className.replace(/(?:^|\s)w-3\/12(?!\S)/g, '');
+                document.getElementById("menu").className += " w-full";
+                document.getElementById("menu").className += " absolute";
+                document.getElementById("menu").className += " z-50";
+                document.getElementById("shadow").className = document.getElementById("shadow").className.replace(/(?:^|\s)hidden(?!\S)/g, '');
+            }
+
+            function hideMenu() {
+                document.getElementById("menu").className = document.getElementById("menu").className.replace(/(?:^|\s)absolute(?!\S)/g, '');
+                document.getElementById("menu").className = document.getElementById("menu").className.replace(/(?:^|\s)w-full(?!\S)/g, '');
+                document.getElementById("menu").className = document.getElementById("menu").className.replace(/(?:^|\s)z-50(?!\S)/g, '');
+                document.getElementById("menu").className += " hidden";
+                document.getElementById("menu").className += " 3/12";
+                document.getElementById("shadow").className += " hidden";
+            }
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     </body>
 </html>
